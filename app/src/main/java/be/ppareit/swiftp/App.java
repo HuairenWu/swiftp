@@ -44,6 +44,8 @@ public class App extends Application {
 
         registerReceiver(new NsdService.ServerActionsReceiver(), intentFilter);
         registerReceiver(new FsWidgetProvider(), intentFilter);
+
+        FsService.start();
     }
 
     /**
