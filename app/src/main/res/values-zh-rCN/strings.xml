@@ -20,6 +20,8 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 
 <resources>
     <string name="swiftp_name">FTP Server</string>
+    <string name="swiftp_name_free">FTP Server (Free)</string>
+    <string name="swiftp_name_demo">FTP Server (Demo)</string>
     <string name="running_label">正在运行</string>
     <string name="running_summary_stopped">开始 FTP server</string>
     <string name="running_summary_started">FTP server 运行于 %s 端口</string>
@@ -29,14 +31,19 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
         您可以通过在 Google Play 中购买 FTP Server 以支持开发者。
 		点击此处跳转至 Google Play 市场。</string>
     <string name="settings_label">设置</string>
+    <string name="user_label">用户</string>
+    <string name="login_settings_label">登录设置...</string>
     <string name="username_label">用户名</string>
     <string name="password_label">密码</string>
     <string name="show_password_label">显示密码</string>
+    <string name="allow_anonymous_label">允许匿名登录</string>
+    <string name="anonymous_summary">匿名登录用户仅允许读取</string>
     <string name="advanced_settings_label">高级设置...</string>
     <string name="port_number_label">端口号</string>
     <string name="chroot_label">设为根目录</string>
     <string name="accept_wifi_label">接受 Wi-Fi 连接</string>
     <string name="wakelock_label">保持设备唤醒（最大 CPU 频率）</string>
+    <string name="writeExternalStorage_label">允许写入外部存储</string>
     <string name="extra_label">其他</string>
     <string name="help_label">帮助...</string>
     <string name="about_label">关于...</string>
@@ -69,6 +76,7 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 https://github.com/ppareit/swiftp/issues 提交您的建议。\n\n
     </string>
 
+    <string name="notification_stop_text">停止服务</string>
     <string name="nsd_servername_postfix">FTP Server</string>
 
     <string name="notification_server_starting">启动于 %s 端口</string>
@@ -79,7 +87,42 @@ https://github.com/ppareit/swiftp/issues 提交您的建议。\n\n
     <string name="username_validation_error">用户名至少需要包括一个或更多字符，不允许为空。</string>
     <string name="password_validation_error">密码至少需要包括一个或更多字符，不允许为空。</string>
     <string name="port_validation_error">端口号必须在 1 至 65535 之间。</string>
+    <string name="select">选择</string>
+    <string name="cancel">取消</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="autoconnect_label">自动连接设置</string>
+    <string name="autoconnect_summary">选择自动连接的无线网络</string>
     <string name="storage_warning">警告：当前存储暂不可用，您可能需要取消挂载。</string>
     <string name="widget_name">FTP Server Widget</string>
+    <string name="notif_settings_text">设置</string>
+    <string name="app_copyright">Copyright 2012 - 2017</string>
+    <string name="about_license_title">License</string>
+    <string name="about_license_name">GNU GPL3</string>
+    <string name="about_description_title">说明</string>
+    <string name="about_libraries_title">库</string>
+    <string name="about_contributor_title">贡献者</string>
+    <string name="app_theme">主题...</string>
+    <string name="dark_theme">暗色主题</string>
+    <string name="light_theme">亮色主题</string>
+    <string name="mixed_theme">混合主题</string>
+    <string name="unable_to_start_mail_client">无法启动邮箱发送反馈</string>
+    <string name="use_english">请使用详细的英语来描述!</string>
+    <string name="request_coarse_location_dlg_title">请求位置权限</string>
+    <string name="unable_to_proceed_no_permissions">没有获得所需的权限，无法继续进行操作，正在关闭。</string>
+    <string name="manage_users_label">管理用户</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+    <string name="user_exists_error">用户名已存在</string>
+    <string name="confirm_delete_message">是否要删除用户 \"%1$s\"?</string>
+    <string name="notice_cant_read_write">请注意，我们无法在此文件夹中进行读写操作。</string>
+    <string name="notice_cant_write">请注意，我们无法在此文件夹中进行写入操作，但读取操作是可以的。在子文件夹中进行写入操作可能会起作用。</string>
+    <string name="manage_users_no_users">没有可用的用户，请创建一个用户。</string>
+    <string name="manage_users_multiple_users">多个用户可用，请查看列表。</string>
+    <string name="gui_settings_label">外观</string>
+    <string name="show_notification_icon_summary">在服务器运行时显示通知图标。</string>
+    <string name="show_notification_icon">显示通知图标</string>
+    <string name="write_external_storage_old_android_version_summary">在这些设备上，所有的存储都可以使用文件层次结构进行访问。</string>
 
 </resources>
