@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             String subject = "FTP Server feedback";
             String message = "Device: " + Build.MODEL + "\n" +
                     "Android version: " + VERSION.RELEASE + "-" + VERSION.SDK_INT + "\n" +
-                    "Application: " + BuildConfig.APPLICATION_ID + " (" + BuildConfig.FLAVOR + ")\n" +
+                    "Application: " + BuildConfig.APPLICATION_ID + "\n" +
                     "Application version: " + BuildConfig.VERSION_NAME + " - " + BuildConfig.VERSION_CODE + "\n" +
                     "Feedback: \n_";
 

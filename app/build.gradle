@@ -11,30 +11,22 @@ android {
         versionCode 30100
         versionName "3.1"
     }
-    lintOptions {
-        disable 'GoogleAppIndexingWarning'
-        baseline file("lint-baseline.xml")
-    }
-    flavorDimensions "default"
-    productFlavors {
-        playstore_paid {
-            applicationId "be.ppareit.swiftp"
-        }
-        playstore_demo {
-            applicationId "be.ppareit.swiftp_free"
-        }
-        fdroid_free {
-            applicationId "be.ppareit.swiftp_free"
+    signingConfigs {
+        android {
+            storeFile file("../platform.jks")
+            storePassword "android"
+            keyAlias "android"
+            keyPassword "android"
         }
     }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.android
+        }
         release {
-            shrinkResources true
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            lintOptions {
-                disable 'MissingTranslation'
-            }
+            signingConfig signingConfigs.android
         }
     }
     compileOptions {

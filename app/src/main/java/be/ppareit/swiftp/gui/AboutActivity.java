@@ -34,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
         }
 
         TextView packageNameText = (TextView) findViewById(R.id.about_package_name);
-        packageNameText.setText(BuildConfig.APPLICATION_ID + " (" + BuildConfig.FLAVOR + ")");
+        packageNameText.setText(BuildConfig.APPLICATION_ID);
 
         TextView versionInfoText = (TextView) findViewById(R.id.about_version_info);
         versionInfoText.setText(BuildConfig.VERSION_NAME + " - " + BuildConfig.VERSION_CODE + " (" + Build.VERSION.RELEASE + "-" + Build.VERSION.SDK_INT + ")");
