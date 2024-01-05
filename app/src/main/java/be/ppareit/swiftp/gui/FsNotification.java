@@ -93,7 +93,7 @@ public class FsNotification {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = "Show FTP Server state";
             String description = "This notification shows the current state of the FTP Server";
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            int importance = NotificationManager.IMPORTANCE_NONE;
             NotificationChannel channel = new NotificationChannel(channelId, name, importance);
             channel.setDescription(description);
             nm.createNotificationChannel(channel);
