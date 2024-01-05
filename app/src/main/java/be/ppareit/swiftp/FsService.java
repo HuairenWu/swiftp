@@ -235,7 +235,7 @@ public class FsService extends Service implements Runnable {
     public void run() {
         Log.d(TAG, "Server thread running");
 
-        if (!isConnectedToLocalNetwork()) {
+        if (false && !isConnectedToLocalNetwork()) {
             Log.w(TAG, "run: There is no local network, bailing out");
             stopSelf();
             sendBroadcast(new Intent(ACTION_FAILEDTOSTART));
